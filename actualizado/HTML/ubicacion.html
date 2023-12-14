@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEP san benito cañete</title>
+    <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
+   
+    <link rel="stylesheet" href="/CSS/style.css">
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Bienvenidos a Sanbenito ">
+    <meta name="description"
+        content="San benito es un colegio estatal">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Aqui te enseñamos todo lo que debas saber">
+    <meta property="og:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="og:image" content="https://alexcgdesign.github.io/images/css.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jordanalex.com/">
+
+    <meta property="twitter:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+
+
+
+    
+   
+   
+</head>
+
+<body>
+
+    <header class="hero3">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="/index.html" style="text-decoration: none; color: whitesmoke;">
+                  <h2 class="nav__title" style="font-size: 40px;">SB</h2>
+                </a>
+              </div>
+              
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">INICIO</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/HTML/nosotrosSomos.html" class="nav__links">NOSOTROS SOMOS</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/HTML/ubicacion.html" class="nav__links">UBICACION</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/HTML/historia.html" class="nav__links">HISTORIA</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/HTML/calendario.html" class="nav__links">CALENDARIO</a>
+                </li>
+                
+
+                <li class="nav__items">
+                    <a href="/HTML/form.html" class="nav__links">CONTACTANOS</a>
+                </li>
+
+                <img src="/image/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="/image/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+
+    </header>
+
+    <body>
+      
+
+
+       
+        
+        <div class="ubicacion">
+            <h2 style="font-size: 34px;
+            color: var(--color-title);">Ubicación</h2>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=imperial+ca%C3%B1ete&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <style>
+
+        .ubicacion {
+             text-align: center; /* Centrar el contenido */
+        }
+
+        .mapouter {
+            display: inline-block;
+            border: 5px solid; /* El color del borde se definirá dinámicamente */
+            padding: 10px;
+        }
+
+
+          </style>
+
+          <script>
+            // Función para cambiar dinámicamente el color del borde en un arcoíris
+function cambiarColorArcoiris() {
+  const mapouter = document.querySelector('.mapouter');
+  const colors = ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#9400d3']; // Colores del arcoíris
+
+  let index = 0;
+
+  // Cambiar el color del borde cada cierto intervalo de tiempo
+  setInterval(() => {
+    mapouter.style.borderColor = colors[index]; // Establecer el color del borde
+
+    index++; // Avanzar al siguiente color
+    if (index >= colors.length) {
+      index = 0; // Volver al inicio del arcoíris
+    }
+  }, 500); // Cambiar cada segundo (puedes ajustar el intervalo de tiempo a tu gusto)
+}
+
+// Llamar a la función para iniciar el cambio de color del borde
+cambiarColorArcoiris();
+
+          </script>
+
+          
+          
+          
+        
+        </body>
+        <script src="/js/slider.js"></script>
+        <script src="/js/questions.js"></script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/valores.js"></script>
+        <script src="/js/vision.js"></script>
+        <script src="/js/mision.js"></script>
+    
+</body>
+</html>

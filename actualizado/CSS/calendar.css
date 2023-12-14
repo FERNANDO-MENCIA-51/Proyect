@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    /* Otros estilos para tu contenedor principal */
+  }
+  h1 {
+    color: #008080;
+  }
+  
+  #fechas-lista {
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #008080;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Estilo para resaltar las fechas en negrita */
+  li strong {
+    font-weight: bold;
+    color: #ff6347; /* Rojo coral */
+  }
+  @media only screen and (max-width: 1024px) {
+    .container {
+      width: 90%;
+      /* Otros estilos específicos para tablets */
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      /* Otros estilos específicos para celulares */
+    }
+  }
